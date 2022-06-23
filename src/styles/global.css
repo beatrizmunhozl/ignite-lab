@@ -4,6 +4,8 @@
 
 body {
     @apply 
-    bg-zinc-900 
-    text-purple-200;
+    bg-gray-900 
+    text-gray-100;
+    -webkit-font-smoothing: antialiased; 
+    /*deixa a fonte mais nitida no chrome */
 }
