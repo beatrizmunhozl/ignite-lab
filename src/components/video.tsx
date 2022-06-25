@@ -41,14 +41,12 @@ interface VideoProps {
 const Video = (props: VideoProps) => {
     //flex-1 significa que a div vai poder esticar ou reduzir conforme
     //eu precisar de mais ou menos tamanho
-    const [loading, isLoading] = useState(true)
     const {data} = useQuery<GetLessonBySlugResponse>(GET_LESSON_BY_SLUG_QUERY, {
         variables: {
             slug: props.lessonSlug
         }
     })
 
-    console.log(data)
 
     return (        
         <>{data? 
